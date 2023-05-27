@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="E-commerce product page challenge on Frontend Mentor">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>E-commerce product page</title>
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!--Css styles-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="menu__container">
+        <button id="menu__button" class="menu__hamburguer">
+          <img src="./assets/images/icon-menu.svg" alt="icon hamburguer" class="icon__hamburguer">
+        </button>
+         <img src="./assets/images/logo.svg" alt="logo image" class="header__logo">
+          <nav>
+            <ul class="menu">
+              <li class="menu__list">
+                <a href="#">Collections</a>
+              </li>
+              <li class="menu__list">
+                <a href="#">Men</a>
+              </li>
+              <li class="menu__list">
+                <a href="#">Women</a>
+              </li>
+              <li class="menu__list">
+                <a href="#">About</a>
+              </li>
+              <li class="menu__list">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+     
+      <div class="user__container">
+        <button class="button__cart">
+          <span id="cart__total" class="cart__total">0</span>
+          <img src="./assets/images/icon-cart.svg" alt="icon cart" class="button__image">
+        </button>
+        <img src="./assets/images/image-avatar.png" alt="image user" class="user__image">
+      </div>
+
+      <section id="cart__box" class="cart__box">
+         <p class="cart__title">Cart</p>
+          <div id="product" class="cart__product">
+            <p class="cart__text active">Your cart is empty.</p>
+            
+      </section>
+    </header>
+    <main>
+      <section class="image__section">
+        <div class="image__desktop">
+          <img src="./assets/images/image-product-1.jpg" class="main__image">
+            <div class="btn__container">
+                <button class="btn__image selected">
+                  <img class="image-icon" src="./assets/images/image-product-1.jpg" alt="image btn main">
+                </button>
+                <button class="btn__image ">
+                  <img class="image-icon" src="./assets/images/image-product-2.jpg" alt="image btn main">
+                </button>
+                <button class="btn__image">
+                  <img class="image-icon" src="./assets/images/image-product-3.jpg" alt="image btn main">
+                </button>
+                <button class="btn__image">
+                  <img class="image-icon" src="./assets/images/image-product-4.jpg" alt="image btn main">
+                </button>
+            </div>
+        </div>
+            <div class="image__mobile">
+              <button id="button__previuos" class="button__mobile">
+                <img src="./assets/images/icon-previous.svg" alt="icon previous">
+              </button>
+              <button id="button__next" class="button__mobile">
+                <img src="./assets/images/icon-next.svg" alt="icon next">
+              </button>
+            
+        </div>
+
+      </section>
+      <section class="information__section">
+        <h4 class="information__subtitle">Sneaker Company</h4>
+        <h1 class="information__title">Fall Limited Edition Sneakers</h1>
+        <p class="information__description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="price__box">
+          <div class="price__container">
+          <h3 class="price">$125.00</h3>
+          <span class="price__discount">50%</span>
+        </div>
+        <h4 class="price__outline">$250.00</h4>
+        </div>
+        <section class="overall__container">
+          <div class="cart__container">
+          <button class="button button--minus">
+            <img src="./assets/images/icon-minus.svg" alt="icon minus" class="image__minus">
+          </button>
+          <div class="amount__container">
+            <p id="amount__text" class="amount__text">1</p>
+          </div>
+          <button class="button button--plus">
+            <img src="./assets/images/icon-plus.svg" alt="icon plus" class="image__plus">
+          </button>
+        </div>
+
+        <button id="button" class="button-cart">
+          <img src="./assets/images/icon-cart-white.svg" alt="icon cart white" class="icon__cart-white">
+        Add to cart</button>
+    </main>
+    </div>
+
+    <section id="modal" class="modal">
+      <div class="modal__container">
+        <button class="btn__close">
+          <img src="./assets/images/icon-close-modal.svg" alt="close" class="image__close">
+        </button>
+        <div class="modal__image">
+              <button id="button__modal" class="button__mobile button__previuos--modal">
+                <img src="./assets/images/icon-previous.svg" class="image__button--modal previous" alt="icon modal previous">
+              </button>
+              <button id="button__modal" class="button__mobile button__next--modal">
+                <img src="./assets/images/icon-next.svg" class="image__button--modal next" alt="icon modal next">
+              </button>
+        </div>
+            <div class="btn__container--modal">
+                <button class="btn__image--modal selected">
+                  <img class="image-icon" src="./assets/images/image-product-1.jpg" alt="image btn modal">
+                </button>
+                <button class="btn__image--modal">
+                  <img class="image-icon" src="./assets/images/image-product-2.jpg" alt="image btn modal">
+                </button>
+                <button class="btn__image--modal">
+                  <img class="image-icon" src="./assets/images/image-product-3.jpg" alt="image btn modal">
+                </button>
+                <button class="btn__image--modal">
+                  <img class="image-icon" src="./assets/images/image-product-4.jpg" alt="image btn modal">
+                </button>
+            </div>
+      </div>
+      
+    </section>
+    <section id="modal-menu" class="modal--menu">
+      <div class="menu__container--mobile">
+         <button class="btn__close-mobile">
+          <img src="./assets/images/icon-close.svg" alt="close" class="image__close">
+          </button>
+          <nav class="navegation--mobile">
+            <ul class="menu-mobile">
+              <li class="menu__list--mobile">
+                <a href="#">Collections</a>
+              </li>
+              <li class="menu__list--mobile">
+                <a href="#">Men</a>
+              </li>
+              <li class="menu__list--mobile">
+                <a href="#">Women</a>
+              </li>
+              <li class="menu__list--mobile">
+                <a href="#">About</a>
+              </li>
+              <li class="menu__list--mobile">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+    </section>
+<script type="module" src="./assets/js/script.js"></script>
+</body>
+</html>

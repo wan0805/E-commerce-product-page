@@ -1,0 +1,11 @@
+/*reset*/
+@import url("./reset.css");
+
+/*global*/
+@import url("./global.css");
+
+/*header*/
+@import url("./header.css");
+
+/*main*/
+@import url("./main.css");
