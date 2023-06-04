@@ -27,10 +27,10 @@ function toogleCart(){
 	cartBox.classList.toggle("active");
 }
 
-function doAddProductToCart(total,sumOfProducts){
+function doAddProductToCart(total,currentProductQuantity){
 		let cardProduct = `<div class="product__item">
                 <img src="./assets/images/image-product-1-thumbnail.jpg" alt="image product" class="product__image">
-              <p class="product__title">Fall Limited Edition Sneakers $125.00 x ${sumOfProducts} <span  class="product__title__bold"> $${total.toFixed(2)}</span></p>
+              <p class="product__title">Fall Limited Edition Sneakers $125.00 x ${currentProductQuantity} <span class="product__title__bold"> $${total.toFixed(2)}</span></p>
               <button class="product__delete">
                
               </button>
