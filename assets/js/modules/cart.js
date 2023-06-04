@@ -49,13 +49,13 @@ function doSendDataToCart(){
 		let quantityProductDoProduto = 125;
 		quantityInCart += chosenQuantity
 		let currentProductQuantity = cartTotal.innerHTML =+ quantityInCart;
-		let sumOfProducts = quantityInCart + chosenQuantity;
 		cartTotal.style.display = "block";
-		let total = quantityProductDoProduto * currentProductQuantity;
+		let total = quantityProductOfProduto * currentProductQuantity;
 		doAddProductToCart(total,currentProductQuantity);
 		cartText.classList.remove("active");
-		amountProduct.innerHTML = 1;
 		cont = 1;
+		amountProduct.innerHTML = cont;
+		
 }
 
 
@@ -67,7 +67,7 @@ function doReducesTheAmountOfProduct(){
 
 
 function doIncreasesTheAmountOFProduct(){
-	let quantityProduct = amountProduct.innerHTML = cont++;
+	let quantityProduct = amountProduct.innerHTML = ++cont;
 	
 }
 buttonCart.addEventListener("click", toogleCart);
