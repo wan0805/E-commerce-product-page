@@ -228,3 +228,17 @@ header{
 		height: 230px;
 	}
 }
+@media (max-width: 300px){
+	header{
+		font-size: 13px;
+	}
+	.header__logo{
+		width: 65%;
+	}
+	.cart__text{
+		margin-right: 50%;
+	}
+	.cart__box{
+		width:85%;
+	}
+}
