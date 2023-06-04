@@ -55,6 +55,7 @@ function doSendDataToCart(){
 		cartText.classList.remove("active");
 		cont = 1;
 		amountProduct.innerHTML = cont;
+
 		
 }
 
