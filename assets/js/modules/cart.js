@@ -44,13 +44,13 @@ function doAddProductToCart(total,sumOfProducts){
 }
 
 function doSendDataToCart(){
-		let quantityInCart = parseInt(cartTotal.innerText);
-		let chosenQuantity = parseInt(amountProduct.innerHTML);
+		let quantityInCart = Number(cartTotal.innerText);
+		let chosenQuantity = Number(amountProduct.innerHTML);
 		let quantityProductDoProduto = 125;
 		quantityInCart += chosenQuantity
-		let currentProductQuantity = cartTotal.innerHTML =+ quantityInCart;
+		let currentProductQuantity = Number(cartTotal.innerHTML =+ quantityInCart);
 		cartTotal.style.display = "block";
-		let total = quantityProductOfProduto * currentProductQuantity;
+		let total = quantityProductDoProduto * currentProductQuantity;
 		doAddProductToCart(total,currentProductQuantity);
 		cartText.classList.remove("active");
 		cont = 1;
